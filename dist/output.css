@@ -607,6 +607,16 @@ video {
   margin-bottom: 2.5rem;
 }
 
+.my-11 {
+  margin-top: 2.75rem;
+  margin-bottom: 2.75rem;
+}
+
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -677,6 +687,10 @@ video {
 
 .mb-0 {
   margin-bottom: 0px;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .flex {
@@ -801,6 +815,14 @@ video {
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.self-center {
+  align-self: center;
+}
+
+.justify-self-center {
+  justify-self: center;
 }
 
 .overflow-hidden {
@@ -944,6 +966,10 @@ video {
 
 .pl-4 {
   padding-left: 1rem;
+}
+
+.pt-9 {
+  padding-top: 2.25rem;
 }
 
 .text-center {
