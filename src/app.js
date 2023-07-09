@@ -13,3 +13,16 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hide-this')
 hiddenElements.forEach((el) => observer.observe(el))
+
+var links = document.querySelectorAll('a[href^="#"]');
+for (var i = 0; i < links.length; i++) {
+  links[i].addEventListener('click', function(event) {
+    event.preventDefault();
+    var target = document.querySelector(this.getAttribute('href'));
+    var offsetTop = target.offsetTop;
+    window.scrollTo({
+      top: offsetTop,
+      behavior: "smooth"
+    });
+  });
+}
