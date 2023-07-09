@@ -23,3 +23,13 @@
 .box:nth-child(5) {
     transition-delay: 800ms;
 }
+
+.container:nth-child(2) {
+    transition-delay: 200ms;
+}
+.container:nth-child(3) {
+    transition-delay: 400ms;
+}
+.container:nth-child(4) {
+    transition-delay: 600ms;
+}
