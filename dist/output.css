@@ -665,12 +665,12 @@ video {
   height: 24rem;
 }
 
-.h-px {
-  height: 1px;
+.h-full {
+  height: 100%;
 }
 
-.h-60 {
-  height: 15rem;
+.h-px {
+  height: 1px;
 }
 
 .max-h-20 {
@@ -709,44 +709,43 @@ video {
   width: 24rem;
 }
 
-.w-1 {
-  width: 0.25rem;
+.w-screen {
+  width: 100vw;
 }
 
-.w-72 {
-  width: 18rem;
+.w-min {
+  width: -moz-min-content;
+  width: min-content;
 }
 
-.w-4 {
-  width: 1rem;
+.w-9 {
+  width: 2.25rem;
 }
 
-.w-44 {
-  width: 11rem;
+.w-80 {
+  width: 20rem;
 }
 
-.w-2 {
-  width: 0.5rem;
+.w-0 {
+  width: 0px;
 }
 
-.w-24 {
-  width: 6rem;
+.min-w-full {
+  min-width: 100%;
 }
 
-.w-1\/3 {
-  width: 33.333333%;
+.min-w-max {
+  min-width: -moz-max-content;
+  min-width: max-content;
 }
 
-.w-1\/5 {
-  width: 20%;
+.max-w-min {
+  max-width: -moz-min-content;
+  max-width: min-content;
 }
 
 .flex-1 {
   flex: 1 1 0%;
-}
-
-.flex-none {
-  flex: none;
 }
 
 .shrink-0 {
@@ -755,6 +754,20 @@ video {
 
 .basis-full {
   flex-basis: 100%;
+}
+
+.-translate-x-0 {
+  --tw-translate-x: -0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-full {
+  --tw-translate-x: -100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .flex-row {
@@ -811,6 +824,10 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
 }
 
 .overflow-x-hidden {
@@ -948,11 +965,6 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .pl-3 {
   padding-left: 0.75rem;
 }
@@ -1037,6 +1049,16 @@ video {
   color: rgb(113 113 122 / var(--tw-text-opacity));
 }
 
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
+}
+
 @media (min-width: 1024px) {
   .lg\:-right-44 {
     right: -11rem;
@@ -1112,24 +1134,12 @@ video {
     display: block;
   }
 
-  .lg\:h-72 {
-    height: 18rem;
-  }
-
   .lg\:w-2\/4 {
     width: 50%;
   }
 
   .lg\:w-36 {
     width: 9rem;
-  }
-
-  .lg\:w-20 {
-    width: 5rem;
-  }
-
-  .lg\:w-96 {
-    width: 24rem;
   }
 
   .lg\:max-w-3xl {
