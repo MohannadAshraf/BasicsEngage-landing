@@ -665,10 +665,6 @@ video {
   height: 24rem;
 }
 
-.h-full {
-  height: 100%;
-}
-
 .h-px {
   height: 1px;
 }
@@ -709,41 +705,6 @@ video {
   width: 24rem;
 }
 
-.w-screen {
-  width: 100vw;
-}
-
-.w-min {
-  width: -moz-min-content;
-  width: min-content;
-}
-
-.w-9 {
-  width: 2.25rem;
-}
-
-.w-80 {
-  width: 20rem;
-}
-
-.w-0 {
-  width: 0px;
-}
-
-.min-w-full {
-  min-width: 100%;
-}
-
-.min-w-max {
-  min-width: -moz-max-content;
-  min-width: max-content;
-}
-
-.max-w-min {
-  max-width: -moz-min-content;
-  max-width: min-content;
-}
-
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -754,20 +715,6 @@ video {
 
 .basis-full {
   flex-basis: 100%;
-}
-
-.-translate-x-0 {
-  --tw-translate-x: -0px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-translate-x-full {
-  --tw-translate-x: -100%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.transform {
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .flex-row {
@@ -824,14 +771,6 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
-}
-
-.overflow-x-auto {
-  overflow-x: auto;
-}
-
-.overflow-x-hidden {
-  overflow-x: hidden;
 }
 
 .break-words {
@@ -1049,19 +988,21 @@ video {
   color: rgb(113 113 122 / var(--tw-text-opacity));
 }
 
-.transition-transform {
-  transition-property: transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.duration-500 {
-  transition-duration: 500ms;
-}
-
 @media (min-width: 1024px) {
+  .lg\:sticky {
+    position: sticky;
+  }
+
   .lg\:-right-44 {
     right: -11rem;
+  }
+
+  .lg\:top-0 {
+    top: 0px;
+  }
+
+  .lg\:z-10 {
+    z-index: 10;
   }
 
   .lg\:m-5 {
@@ -1152,10 +1093,6 @@ video {
 
   .lg\:flex-col {
     flex-direction: column;
-  }
-
-  .lg\:flex-wrap {
-    flex-wrap: wrap;
   }
 
   .lg\:justify-between {
