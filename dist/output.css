@@ -645,8 +645,20 @@ video {
   margin-top: 1.25rem;
 }
 
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
 .flex {
   display: flex;
+}
+
+.contents {
+  display: contents;
 }
 
 .hidden {
@@ -699,6 +711,10 @@ video {
 
 .w-96 {
   width: 24rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .flex-1 {
